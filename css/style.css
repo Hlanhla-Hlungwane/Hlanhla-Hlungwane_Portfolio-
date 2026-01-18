@@ -490,7 +490,7 @@ PROJECTS SECTION STYLING
     background: #fff;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s ease;
-    width: 100%;
+    width: 45%;
     /* ✅ allows two cards side-by-side */
     height: 650px;
    /* margin: 0 auto;*/ 
