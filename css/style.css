@@ -695,11 +695,15 @@ align-items: center;
 
 /* Logo track (moving strip) */
 .logo-track {
-display: flex;
-gap: 4rem;
-animation: scrollLogos 60s linear infinite;
-/* You can change 20s to 6s for faster movement */
+  display: flex;
+  flex-wrap: nowrap;          /* 🚨 THIS IS THE KEY */
+  align-items: center;
+  gap: 4rem;
+
+  width: max-content;         /* Make row as wide as all logos */
+  animation: scrollLogos 30s linear infinite;
 }
+
 
 /* Each logo */
 .brand-logo {
