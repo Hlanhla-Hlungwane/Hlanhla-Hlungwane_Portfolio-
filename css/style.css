@@ -34,7 +34,7 @@ body {
     z-index: 0;
 }
 
-.about-section * {
+.about-section {
     position: relative;
     z-index: 1;
     /* brings text, buttons, and images above the overlay */
