@@ -30,9 +30,9 @@ body {
     position: absolute;
     inset: 0;
     background: rgba(255, 255, 255, 0.7);
-    /* soft overlay to make text readable */
     z-index: 0;
 }
+
 
 .about-section {
     position: relative;
