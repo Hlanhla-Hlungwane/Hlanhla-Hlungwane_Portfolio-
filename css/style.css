@@ -659,8 +659,10 @@ BRANDS SECTION STYLING
     text-align: justify;
     /* clean alignment for long paragraphs */
     text-align: justify;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 0 auto;
+
+  /*  margin-left: 300px;*/
+    /*margin-right: 300px;*/
 }
 
 /* Responsive adjustments */
