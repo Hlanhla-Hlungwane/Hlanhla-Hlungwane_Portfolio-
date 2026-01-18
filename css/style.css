@@ -654,7 +654,7 @@ BRANDS SECTION STYLING
     line-height: 1.8;
     color: #333;
     margin-bottom: 1.2rem;
-    max-width: 1500px;
+    max-width: 100%;
     /* consistent spacing between paragraphs */
     text-align: justify;
     /* clean alignment for long paragraphs */
