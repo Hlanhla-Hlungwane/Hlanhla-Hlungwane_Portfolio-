@@ -285,7 +285,7 @@ to create the stacked deck effect.
     margin: 0 auto;
     perspective: 1000px;
     /* subtle depth */
-    height: 1000px;
+    min-height: 1000px;
     /* controls visible area - adjust if needed */
     display: block;
 }
