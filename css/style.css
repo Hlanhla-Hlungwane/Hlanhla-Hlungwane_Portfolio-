@@ -685,39 +685,35 @@ BRANDS SECTION STYLING
 
 
 
-
 .logo-slider {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
+overflow: hidden;
+position: relative;
+width: 100%;
+display: flex;
+align-items: center;
 }
 
 /* Logo track (moving strip) */
 .logo-track {
-    display: flex;
-    gap: 4rem;
-    animation: scrollLogos 60s linear infinite;
-    /* You can change 20s to 6s for faster movement */
+display: flex;
+gap: 4rem;
+animation: scrollLogos 60s linear infinite;
+/* You can change 20s to 6s for faster movement */
 }
 
 /* Each logo */
 .brand-logo {
-    height: 90px;
-    width: auto;
-    object-fit: contain;
-    filter: grayscale(0.3);
-    transition: transform 0.3s ease, filter 0.3s ease;
+height: 90px;
+width: auto;
+object-fit: contain;
+filter: grayscale(0.3);
+transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .brand-logo:hover {
-    filter: grayscale(0);
-    transform: scale(1.1);
+filter: grayscale(0);
+transform: scale(1.1);
 }
-
-/* Animation for continuous right-to-left sliding */
-
 
 /* Animation for continuous right-to-left sliding */
 @keyframes scrollLogos {
@@ -742,15 +738,15 @@ transform: translateX(-50%);
 }
 
 /* Responsive adjustments */
-@media (max-width: 100%x) {
-    .logo-slider {
-        gap: 30px;
-    }
+@media (max-width: 768px) {
+.logo-slider {
+gap: 30px;
+}
 
-    .brand-logo {
-        height: 80px;
-        /* Twice as big as before */
-    }
+.brand-logo {
+height: 80px;
+/* Twice as big as before */
+}
 }
 
 
