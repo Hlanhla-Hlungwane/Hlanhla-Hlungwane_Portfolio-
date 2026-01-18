@@ -634,7 +634,7 @@ BRANDS SECTION STYLING
     /* soft white-grey blend */
     color: #0d3b4c;
     /* same dark blue text as rest of site */
-    padding: 40px 40px;
+   /* padding: 40px 40px;*/
     /* top/bottom + side padding for breathing space */
     /* ✅ limits paragraph width */
 }
