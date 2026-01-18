@@ -666,7 +666,7 @@ BRANDS SECTION STYLING
 }
 
 /* Responsive adjustments */
-@media (max-width: 992px) {
+@media (max-width: 100%) {
     .brands-section {
         padding: 60px 40px;
     }
@@ -717,15 +717,6 @@ BRANDS SECTION STYLING
 }
 
 /* Animation for continuous right-to-left sliding */
-@keyframes scrollLogos {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
 
 
 @keyframes scroll-logos {
@@ -739,7 +730,7 @@ BRANDS SECTION STYLING
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 100%x) {
     .logo-slider {
         gap: 30px;
     }
