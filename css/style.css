@@ -35,13 +35,13 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 16px;
 }
 
 /* ---- Left: text side ---- */
 .about-text {
   flex: 1 1 280px;
-  max-width: 480px;
+  max-width: 380px;
 }
 .about-text h2 {
   font-weight: 700;
@@ -134,7 +134,7 @@ body {
 
 /* ---- Right: photo ---- */
 .about-image {
-  flex: 0 1 260px;
+  flex: 0 1 200px;
   text-align: center;
   position: relative;
 }
