@@ -57,43 +57,6 @@ if (frame1) makeDraggable(frame1);
 if (frame2) makeDraggable(frame2);
 
 
-// =========================================
-//  WORK EXPERIENCE SCROLL ANIMATION
-// =========================================
-const cards   = document.querySelectorAll('.experience-card');
-const section = document.querySelector('.work-experience-section');
-
-function handleScroll() {
-  if (!section || cards.length === 0) return;
-
-  const sectionTop    = section.offsetTop;
-  const sectionHeight = section.offsetHeight;
-  const scrollPos     = window.scrollY;
-
-  const progress        = (scrollPos - sectionTop + window.innerHeight * 0.7) / (sectionHeight * 0.8);
-  const reversedProgress = 1 - progress;
-  const activeIndex     = Math.max(0, Math.min(cards.length - 1, Math.floor(reversedProgress * cards.length)));
-
-  cards.forEach((card, index) => {
-    card.classList.remove('active', 'behind', 'inactive');
-
-    if (index === activeIndex) {
-      card.classList.add('active');
-      card.style.zIndex = 100;
-    } else if (index === activeIndex + 1) {
-      card.classList.add('behind');
-      card.style.zIndex = 90;
-    } else {
-      card.classList.add('inactive');
-      card.style.zIndex = 80 - Math.abs(index - activeIndex) * 5;
-    }
-  });
-}
-
-window.addEventListener('scroll', handleScroll);
-window.addEventListener('load',   handleScroll);
-handleScroll();
-
 
 // =========================================
 //  CONTACT FORM SUBMISSION
