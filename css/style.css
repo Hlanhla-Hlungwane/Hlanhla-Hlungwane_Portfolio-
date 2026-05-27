@@ -37,8 +37,6 @@ body {
   justify-content: center;
   gap: 16px;
 }
-
-/* ---- Left: text side ---- */
 .about-text {
   flex: 1 1 380px;
   max-width: 380px;
@@ -56,8 +54,6 @@ body {
   text-align: justify;
   margin-bottom: 0;
 }
-
-/* ---- Draggable frames ---- */
 .frames-container {
   position: relative;
   margin-top: 32px;
@@ -113,8 +109,6 @@ body {
   z-index: 3;
   border: 3px solid #0d3b4c;
 }
-
-/* ---- Resume button ---- */
 .resume-btn {
   margin-top: 24px;
   background-color: #0d3b4c;
@@ -131,8 +125,6 @@ body {
   background-color: #0a2c38;
   transform: scale(1.03);
 }
-
-/* ---- Right: photo ---- */
 .about-image {
   flex: 0 1 200px;
   text-align: center;
@@ -166,30 +158,7 @@ body {
   z-index: 1;
 }
 
-/* ---- Responsive ---- */
-@media (max-width: 768px) {
-  .about-inner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .about-text {
-    max-width: 100%;
-  }
-  .about-text p {
-    text-align: left;
-  }
-  .about-image {
-    order: -1;
-    flex: 0 1 200px;
-  }
-  .about-image img,
-  .about-image::after {
-    max-width: 180px;
-  }
-}
-
-/* =============================== 
+/* ===============================
    WORK EXPERIENCE SECTION
 =============================== */
 .work-experience-section {
@@ -393,13 +362,6 @@ body {
   transform: scale(1.03);
 }
 
-/* Responsive: stack to 2 columns on tablets, 1 on mobile */
-@media (max-width: 600px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ===============================
    BRANDS SECTION
 =============================== */
@@ -408,28 +370,23 @@ body {
   background: linear-gradient(to right, #f9f9f9, #ffffff);
   color: #0d3b4c;
 }
-
 .brands-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
   color: #0d3b4c;
 }
-
 .brands-text-block {
   max-width: 900px;
   margin: 0 auto 2rem;
   text-align: justify;
 }
-
 .brands-text-block p {
   font-size: 1rem;
   line-height: 1.8;
   color: #333;
   margin-bottom: 1.2rem;
 }
-
-/* Logo Slider */
 .logo-slider {
   overflow: hidden;
   position: relative;
@@ -438,7 +395,6 @@ body {
   align-items: center;
   margin-top: 2rem;
 }
-
 .logo-track {
   display: flex;
   flex-wrap: nowrap;
@@ -447,7 +403,6 @@ body {
   width: max-content;
   animation: scrollLogos 40s linear infinite;
 }
-
 .brand-logo {
   height: 90px;
   width: auto;
@@ -456,17 +411,14 @@ body {
   transition: transform 0.3s ease, filter 0.3s ease;
   flex-shrink: 0;
 }
-
 .brand-logo:hover {
   filter: grayscale(0);
   transform: scale(1.1);
 }
-
 @keyframes scrollLogos {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-
 
 /* ===============================
    CONTACT SECTION
@@ -632,180 +584,115 @@ body {
 }
 
 /* ===============================
-   RESPONSIVE
-=============================== */
-@media (max-width: 768px) {
-  .contact-title { font-size: 1.8rem; }
-  .contact-form { max-width: 100%; margin-left: 0; }
-  .success-container { max-width: 100%; }
-}
-
-/* ===============================
    RESPONSIVE — TABLET (max 992px)
 =============================== */
 @media (max-width: 992px) {
-  .projects-section .col-lg-9 {
-    margin-bottom: 30px;
-  }
-
-  .side-img {
-    max-width: 150px;
-  }
-
   .contact-form,
   .success-container {
     width: 80%;
   }
+  .brand-logo {
+    height: 70px;
+  }
 }
-
 
 /* ===============================
    RESPONSIVE — MOBILE (max 768px)
 =============================== */
 @media (max-width: 768px) {
-
-  /* About */
   .about-inner {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-
-  .about-image::after {
-    display: none; /* hide decorative border on mobile */
+  .about-text {
+    max-width: 100%;
   }
-
+  .about-text p {
+    text-align: left;
+  }
+  .about-image {
+    order: -1;
+    flex: 0 1 200px;
+  }
+  .about-image img,
+  .about-image::after {
+    max-width: 180px;
+  }
+  .about-image::after {
+    display: none;
+  }
   .frames-container {
     height: 240px;
     margin-top: 20px;
   }
-
   .frame {
     width: 160px;
     height: 110px;
   }
-
   .frame-1 { left: 10px; top: 30px; }
   .frame-2 { left: 90px; top: 45px; }
-
-  /* Experience */
-  .experience-cards {
-    height: auto;
-    min-height: 700px;
-    width: 95%;
-  }
-
-  .experience-card {
-    padding: 22px;
-  }
-
-  .experience-card:nth-child(1) { top: 0px; }
-  .experience-card:nth-child(2) { top: 50px; }
-  .experience-card:nth-child(3) { top: 100px; }
-  .experience-card:nth-child(4) { top: 150px; }
-  .experience-card:nth-child(5) { top: 200px; }
-  .experience-card:nth-child(6) { top: 250px; }
-
-  /* Projects */
-  .project-card {
-    width: 90%;
-    height: auto;
-  }
-
-  .cad-img {
-    width: 110px;
-    height: 110px;
-  }
-
-  /* Certificates */
-  .certificates-section {
-    flex-direction: column;
-    text-align: center;
-    margin-left: 0;
-    padding: 0 1rem;
-  }
-
-  .certificates-section p.lead {
-    font-size: 1.1rem;
-  }
-
-  /* Brands */
   .brands-section h2 {
     font-size: 1.8rem;
   }
-
   .brand-logo {
     height: 60px;
   }
-
-  /* Contact */
   .contact-title {
-    font-size: 48px;
+    font-size: 1.8rem;
   }
-
   .contact-description {
-    font-size: 18px;
+    font-size: 1rem;
   }
-
   .contact-form,
   .success-container {
     width: 95%;
+    max-width: 100%;
     margin: 0 auto;
   }
-
   .contact-section {
     padding: 40px 15px;
     background-attachment: scroll;
     align-items: center;
   }
+  .certificates-section {
+    flex-direction: column;
+    text-align: center;
+  }
 }
-
 
 /* ===============================
    RESPONSIVE — SMALL MOBILE (max 480px)
 =============================== */
 @media (max-width: 480px) {
-
-  .contact-title {
-    font-size: 36px;
-  }
-
-  .contact-description {
-    font-size: 15px;
-  }
-
-  .contact-form h2 {
-    font-size: 22px;
-  }
-
-  .contact-form button {
-    font-size: 16px;
-  }
-
-  .work-experience-section h2 {
-    font-size: 1.6rem;
-  }
-
-  .experience-card img.company-logo {
-    width: 50px;
-  }
-
   .about-text h2 {
     font-size: 1.5rem;
   }
-
   .about-text p {
     font-size: 1rem;
   }
-
   .frames-container {
     height: 210px;
   }
-
   .frame {
     width: 140px;
     height: 95px;
   }
-
   .frame-1 { left: 5px; }
   .frame-2 { left: 75px; }
+  .work-experience-section h2 {
+    font-size: 1.6rem;
+  }
+  .contact-title {
+    font-size: 1.5rem;
+  }
+  .contact-form h2 {
+    font-size: 1.1rem;
+  }
+  .contact-form button {
+    font-size: 0.95rem;
+  }
+  .brands-section h2 {
+    font-size: 1.5rem;
+  }
 }
