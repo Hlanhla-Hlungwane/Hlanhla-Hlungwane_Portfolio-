@@ -433,7 +433,7 @@ body {
   padding: 48px 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+   align-items: stretch;
   min-height: auto;
   color: #ADD8E6;
   font-family: 'Arial', sans-serif;
@@ -441,6 +441,11 @@ body {
 }
 .contact-inner {
   width: 100%;
+   display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-between;
+gap: 24px;
 }
 .contact-title {
   font-size: 2.2rem;
@@ -468,8 +473,8 @@ body {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #ffffff;
-  margin-left: auto;
-  margin-top: 10px;
+flex: 0 1 500px;
+margin: 0;
 }
 .contact-form h2 {
   text-align: center;
